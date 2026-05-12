@@ -3,117 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>مُستـشارك للعقارات | خبرة ترضيك.. وأمان يطمئنك</title>
-    <meta name="description" content="مستشارك للعقارات - وجهتك الموثوقة للعقارات في السودان. نقدم استشارات احترافية، شقق مفروشة، مزارع، وأراضي سكنية بأسعار تنافسية وأمان تام.">
-    <meta name="keywords" content="عقارات السودان, شقق مفروشة الخرطوم, منازل بلدية للايجار السودان, أراضي زراعية السودان, مزارع للبيع السودان, مكتب عقارات السودان, مستشارك للعقارات, عقارات ود مدني">
-    <meta name="author" content="مستشارك للعقارات">
-    <meta name="robots" content="index, follow">
-
+    <!-- تحسين SEO شامل للسودان وللبحث العالمي -->
+    <meta name="description" content="مُستشارك للعقارات - منصتك الموثوقة للعقارات في السودان. شقق مفروشة، مزارع استثمارية، دكاكين تجارية ومخازن. خبرة في سوق العقارات السوداني للأفراد والمغتربين.">
+    <meta name="keywords" content="عقارات السودان، استثمار عقاري السودان، شقق مفروشة الخرطوم، عقارات ود مدني، دكاكين للايجار السودان، أراضي زراعية السودان، مغتربين السودان عقارات">
+    <title>مُستـشارك للعقارات | خبيرك العقاري الأول في السودان</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
-    
     <style>
-        :root {
-            --primary: #0f172a; 
-            --accent: #c5a059;
-            --success: #25d366; 
-            --white: #ffffff;
-            --shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        * { box-sizing: border-box; font-family: 'Cairo', sans-serif; scroll-behavior: smooth; }
-        body { margin: 0; padding: 0; background-color: #fcfcfc; color: var(--primary); overflow-x: hidden; }
-
-        header {
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 15px 5%; background: #ffffff;
-            position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        .logo { font-weight: 900; font-size: 1.8rem; color: var(--primary); text-decoration: none; }
-        .logo span { color: var(--accent); }
-
-        .floating-ws {
-            position: fixed; bottom: 30px; left: 30px;
-            background: var(--success); color: white; width: 60px; height: 60px;
-            border-radius: 50%; display: flex; align-items: center; justify-content: center;
-            font-size: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.3); z-index: 9999;
-            text-decoration: none; transition: 0.3s;
-        }
-
-        .hero {
-            height: 75vh; display: flex; align-items: center; justify-content: center;
-            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.7)), 
-                        url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1350&q=80');
-            background-size: cover; background-position: center; color: white;
-            text-align: center; padding: 0 20px;
-        }
-        .hero h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); margin-bottom: 10px; font-weight: 900; }
-        .hero p { font-size: 1.3rem; margin-bottom: 35px; opacity: 0.9; }
-
-        .container { padding: 60px 8%; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-        
-        .card { 
-            background: white; padding: 35px 25px; border-radius: 20px; 
-            box-shadow: var(--shadow); border-bottom: 5px solid var(--accent);
-            text-align: center; transition: 0.4s ease;
-        }
+        :root { --primary: #0f172a; --accent: #c5a059; --success: #25d366; --bg: #f8fafc; }
+        * { box-sizing: border-box; font-family: 'Cairo', sans-serif; margin: 0; padding: 0; scroll-behavior: smooth; }
+        body { background-color: var(--bg); color: var(--primary); line-height: 1.6; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+        .hero { height: 55vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)), url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000') center/cover; color: #fff; padding: 20px; }
+        .container { padding: 50px 5%; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 30px; }
+        .card { background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); border-top: 5px solid var(--accent); transition: 0.3s; text-align: center; }
         .card:hover { transform: translateY(-10px); }
-
-        .btn-ws {
-            display: inline-block; margin-top: 20px; background: var(--success); color: white;
-            padding: 12px 28px; border-radius: 10px; text-decoration: none; font-weight: 700;
-        }
-
-        footer { background: var(--primary); color: white; padding: 60px 8% 30px; text-align: center; }
-
-        @media (max-width: 768px) { .hero h1 { font-size: 2.2rem; } }
+        .card h3 { color: var(--primary); margin-bottom: 15px; font-weight: 900; }
+        .btn-ws { display: inline-block; background: var(--success); color: #fff; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 20px; width: 100%; transition: 0.3s; }
+        .btn-ws:hover { opacity: 0.9; transform: scale(1.02); }
+        footer { background: var(--primary); color: #fff; text-align: center; padding: 50px 20px; margin-top: 50px; }
+        .wa-float { position: fixed; bottom: 30px; left: 30px; background: var(--success); width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4); z-index: 1000; transition: 0.3s; }
+        .wa-float:hover { transform: rotate(15deg) scale(1.1); }
     </style>
 </head>
 <body>
 
-    <a href="https://wa.me/249917717881" class="floating-ws">💬</a>
+<header>
+    <div style="font-weight: 900; font-size: 1.6rem;">مُستـ<span style="color:var(--accent)">شارك</span></div>
+    <div style="font-weight: bold; color: var(--accent);">0917717881</div>
+</header>
 
-    <header>
-        <a href="#" class="logo">مُستـ<span>شارك</span></a>
-        <div style="font-weight: 900;">0917717881</div>
-    </header>
+<section class="hero">
+    <div>
+        <h1 style="font-size: 2.8rem; margin-bottom: 15px; font-weight: 900;">مُستـشارك للعقارات في السودان</h1>
+        <p style="font-size: 1.3rem; opacity: 0.9; max-width: 700px; margin: auto;">بوابتك الموثوقة للاستثمار العقاري، الإيجارات السكنية، والمساحات التجارية بصدق وأمانة.</p>
+        <a href="https://wa.me/249917717881?text=استشارة عقارية من الموقع" class="btn-ws" style="width: auto; padding: 15px 45px; margin-top: 30px; font-size: 1.2rem;">تواصل مع مستشارك الآن</a>
+    </div>
+</section>
 
-    <section class="hero">
-        <div>
-            <h1>مُستـشارك للعقارات</h1>
-            <p>خبرة ترضيك.. وأمان يطمئنك</p>
-            <a href="https://wa.me/249917717881" class="btn-ws" style="padding: 18px 45px;">اطلب استشارتك الآن</a>
+<div class="container">
+    <h2 style="text-align: center; font-size: 2.2rem; margin-bottom: 10px;">سوق العقارات المتكامل</h2>
+    <p style="text-align: center; color: #64748b; margin-bottom: 40px;">نقدم خدماتنا للسودانيين في الداخل وللمغتربين الباحثين عن فرص آمنة</p>
+    
+    <div class="grid">
+        <div class="card">
+            <h3>🏢 شقق ومنازل</h3>
+            <p>إيجارات سكنية ومفروشة في أرقى المواقع السودانية، مجهزة بالكامل للسكن الفوري.</p>
+            <a href="https://wa.me/249917717881?text=طلب سكن" class="btn-ws">استفسر الآن</a>
         </div>
-    </section>
 
-    <section class="container">
-        <div class="grid">
-            <div class="card">
-                <h3>🏠 منازل بلدية</h3>
-                <p>إيجارات سكنية مريحة في أحياء مختارة بعناية.</p>
-                <a href="https://wa.me/249917717881" class="btn-ws">استفسر الآن</a>
-            </div>
-
-            <div class="card">
-                <h3>🛋️ شقق مفروشة</h3>
-                <p>إقامة راقية ومجهزة بالكامل للزوار والشركات.</p>
-                <a href="https://wa.me/249917717881" class="btn-ws">احجز الآن</a>
-            </div>
-
-            <div class="card">
-                <h3>🌴 مزارع منتجة</h3>
-                <p>استثمارات زراعية ومساحات خضراء بعقود مضمونة.</p>
-                <a href="https://wa.me/249917717881" class="btn-ws">استثمر الآن</a>
-            </div>
+        <div class="card">
+            <h3>🏬 دكاكين تجارية</h3>
+            <p>فرص استئجار محلات ودكاكين في مناطق تجارية حيوية لضمان نجاح مشروعك الخاص.</p>
+            <a href="https://wa.me/249917717881?text=دكاكين للإيجار" class="btn-ws">استعلم الآن</a>
         </div>
-    </section>
 
-    <footer>
-        <div style="font-size: 1.8rem; font-weight: 900; margin-bottom: 10px;">مُستـ<span>شارك</span></div>
-        <p>الصدق في النصيحة، والأمانة في المعاملة.</p>
-        <p>جميع الحقوق محفوظة &copy; 2026</p>
-    </footer>
+        <div class="card">
+            <h3>📦 مخازن لوجستية</h3>
+            <p>مساحات تخزين واسعة وآمنة، مثالية للشركات والتجار في مختلف الولايات.</p>
+            <a href="https://wa.me/249917717881?text=طلب مخزن" class="btn-ws">احجز الآن</a>
+        </div>
+
+        <div class="card">
+            <h3>🌴 استثمار زراعي</h3>
+            <p>مزارع منتجة ومساحات خضراء للاستثمار طويل الأمد بعقود قانونية وشفافية مطلقة.</p>
+            <a href="https://wa.me/249917717881?text=استثمار زراعي" class="btn-ws">ابدأ الاستثمار</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div style="font-weight: 900; font-size: 2rem; margin-bottom: 15px;">مُستـشارك العقاري</div>
+    <p style="max-width: 600px; margin: auto; opacity: 0.8;">نعمل على ربط المغتربين والباحثين عن الاستقرار بأفضل الفرص العقارية في السودان. الصدق في النصيحة، والأمانة في المعاملة.</p>
+    <div style="margin-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+        <p>© 2026 جميع الحقوق محفوظة لـ مُستشارك للعقارات</p>
+    </div>
+</footer>
+
+<a href="https://wa.me/249917717881" class="wa-float" title="تواصل عبر واتساب">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="38" alt="WhatsApp">
+</a>
 
 </body>
 </html>
